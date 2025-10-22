@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stars Models</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<style>
+    .hero-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdn.pixabay.com/photo/2016/11/19/20/17/catwalk-1840941_1280.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .model-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(71, 3, 54, 0.04);
+    }
+    .client-logo {
+        filter: grayscale(100%);
+        transition: all 0.3s ease;
+    }
+    .client-logo:hover {
+        filter: grayscale(0%);
+    }
+    .gradient-text {
+        background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .star-glow {
+        filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6)) drop-shadow(0 0 12px rgba(236, 72, 153, 0.4));
+    }
+</style>
+<body class="bg-black font-sans antialiased text-white">
+    <!-- Navegação Simplificada (Não Logado) -->
+    <nav class="bg-black shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- ESTRELA DO LADO ESQUERDO DO TEXTO -->
+                        <div class="flex items-center space-x-3">
+                            <!-- Estrela brilhante -->
+                            <div class="star-glow">
+                                <svg width="28" height="28" viewBox="0 0 24 24">
+                                    <defs>
+                                        <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#8b5cf6" />
+                                            <stop offset="100%" stop-color="#ec4899" />
+                                        </linearGradient>
+                                        <filter id="glow">
+                                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                            <feMerge>
+                                                <feMergeNode in="coloredBlur"/>
+                                                <feMergeNode in="SourceGraphic"/>
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+                                    <path fill="url(#starGradient)" filter="url(#glow)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <!-- Texto -->
+                            <span class="text-2xl font-bold gradient-text">STARS MODELS</span>
+                        </div>
+                    </div>
+                </div>
+               <div class="flex items-center space-x-4">
+    <a href="login.php" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+        Login
+    </a>
+    <a href="cadastro.php" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+        Cadastre-se
+    </a>
+</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Seção Hero -->
+    <div id="hero" class="hero-bg min-h-screen flex items-center px-4 sm:px-6 lg:px-8 py-24">
+        <div class="max-w-7xl mx-auto lg:text-center">
+            <h1 class="text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl mb-6" data-aos="fade-down">
+                STARS MODELS AGENCY
+            </h1>
+            <p class="mt-6 text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Descubra os melhores talentos da indústria de modelos. Conectando modelos excepcionais com marcas de classe mundial.
+            </p>
+            <div class="mt-10" data-aos="fade-up" data-aos-delay="200">
+                <a href="cadastro.php" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                    Junte-se à Agência
+                </a>
+                <a href="cadastro.php" class="ml-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-700 hover:bg-purple-800">
+                    Ver Talentos
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... resto do código HTML ORIGINAL permanece igual ... -->
+
+    <!-- Seção Portfólio -->
+    <div class="bg-black py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl" data-aos="fade-up">
+                    NOSSO PORTFÓLIO
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-purple-300 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Confiado pelas principais marcas do mundo
+                </p>
+            </div>
+            <div class="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4">
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in">
+                    <img class="h-12 client-logo" src="https://s2.glbimg.com/KV5eehME-_BD7QEL-W06_2swk4U=/s.glbimg.com/og/rg/f/original/2014/04/03/vemai_marca_1.jpg" alt="Globo" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in" data-aos-delay="100">
+                    <img class="h-12 client-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpC0hpGaPPeHJc7DK8_hr-AC9BRqUZKok6ug&s" alt="SBT" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img class="h-12 client-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfLLvxrgydiMrvNdRBAH0aRMUVYl74D2R4Q&s" alt="Band" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img class="h-12 client-logo" src="https://turbologo.com/articles/wp-content/uploads/2019/07/mcdonalds-the-m-logo-1968.jpg.webp" alt="McDonald's" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in">
+                    <img class="h-12 client-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMkfXWu5UPTTmow9UUeiLyHsQi7GVoUgwOsA&s" alt="Carrefour" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in" data-aos-delay="100">
+                    <img class="h-12 client-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png" alt="Mercedes-Benz" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img class="h-12 client-logo" src="https://logodownload.org/wp-content/uploads/2014/02/santander-logo-0.png" alt="Santander" />
+                </div>
+                <div class="col-span-1 flex justify-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img class="h-12 client-logo" src="https://logodownload.org/wp-content/uploads/2018/09/caixa-economica-federal-logo.png" alt="Caixa Econômica Federal" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modelos em Destaque -->
+    <div class="bg-purple-200 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-purple-900 sm:text-4xl" data-aos="fade-up">
+                    MODELOS EM DESTAQUE
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-purple-800 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Descubra nossos melhores talentos
+                </p>
+            </div>
+
+            <!--Fotos e nomes dos modelos-->
+            <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md model-card transition duration-300" data-aos="fade-up">
+                    <img class="w-full h-64 object-cover" src="https://cdn.pixabay.com/photo/2025/06/11/07/42/creepers-9653850_960_720.jpg" alt="Modelo" />
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-purple-900">Lenita Leitão</h3>
+                        <p class="mt-1 text-sm text-purple-700">Modelo de Moda</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md model-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img class="w-full h-64 object-cover" src="https://cdn.pixabay.com/photo/2016/08/11/00/46/business-lady-1584655_1280.jpg" alt="Modelo" />
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-purple-900">Sofia Fernandes</h3>
+                        <p class="mt-1 text-sm text-purple-700">Modelo Comercial</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md model-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-64 object-cover" src="https://cdn.pixabay.com/photo/2023/02/08/06/29/fashion-7775824_1280.jpg" alt="Modelo" />
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-purple-900">Carlos Mendes</h3>
+                        <p class="mt-1 text-sm text-purple-700">Ator</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md model-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img class="w-full h-64 object-cover" src="https://cdn.pixabay.com/photo/2022/11/23/07/16/selfie-7611326_640.jpg" alt="Modelo" />
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-purple-900">Ana Beatriz</h3>
+                        <p class="mt-1 text-sm text-purple-700">Influenciadora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 text-center">
+                <a href="cadastro.php" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-700 hover:bg-purple-800">
+                    Ver Todos os Modelos
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção CTA -->
+    <div class="bg-purple-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Pronto para encontrar o talento perfeito?</span>
+                <span class="block text-purple-300">Cadastre-se hoje e descubra os talentos que vão transformar sua marca.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="cadastro.php" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                        Cadastre-se Agora
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="login.php" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-700 bg-opacity-90 hover:bg-opacity-100">
+                        Fazer Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-purple-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider uppercase">Sobre</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Nossa História</a></li>
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Missões</a></li>
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Notícias</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider uppercase">Serviços</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Casting</a></li>
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Jobs</a></li>
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider uppercase">Suporte</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="cadastro.php" class="hover:text-purple-300">FAQ</a></li>
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Ajuda</a></li>
+                        <li><a href="cadastro.php" class="hover:text-purple-300">Termos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider uppercase">Contato</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="mailto:contato@starsmodels.com" class="hover:text-purple-300">starsmodels@gmail.com</a></li>
+                        <li><a href="tel:+5511999999999" class="hover:text-purple-300">61 4184847</a></li>
+                        <li>Brasília, Brasil</li>
+                        <li>Asa Norte</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-purple-800 pt-8 text-center text-white-400 text-sm">
+                © 2025 Stars Models Agency. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
