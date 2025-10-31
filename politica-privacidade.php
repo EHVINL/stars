@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso - Stars Models</title>
+    <title>Política de Privacidade - Stars Models</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
@@ -19,14 +19,14 @@
             color: #ffffff;
         }
 
-        .terms-container {
+        .privacy-container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
 
         /* Header */
-        .terms-header {
+        .privacy-header {
             background: #1f1f1f;
             padding: 40px;
             border-radius: 15px;
@@ -36,13 +36,13 @@
             margin-top: 30px;
         }
 
-        .terms-header h1 {
+        .privacy-header h1 {
             color: #ffffff;
             font-size: 2.5rem;
             margin-bottom: 15px;
         }
 
-        .terms-header p {
+        .privacy-header p {
             color: #d1d5db;
             font-size: 1.1rem;
             max-width: 600px;
@@ -56,7 +56,7 @@
         }
 
         /* Navigation - CORES ROXO/ROSA DO SITE */
-        .terms-nav {
+        .privacy-nav {
             background: #1f1f1f;
             padding: 20px;
             border-radius: 10px;
@@ -67,7 +67,7 @@
             z-index: 100;
         }
 
-        .terms-nav h3 {
+        .privacy-nav h3 {
             color: #ffffff;
             margin-bottom: 15px;
             font-size: 1.2rem;
@@ -101,7 +101,7 @@
         }
 
         /* Content */
-        .terms-content {
+        .privacy-content {
             background: #1f1f1f;
             padding: 40px;
             border-radius: 15px;
@@ -109,16 +109,16 @@
             margin-bottom: 30px;
         }
 
-        .terms-section {
+        .privacy-section {
             margin-bottom: 40px;
             scroll-margin-top: 100px;
         }
 
-        .terms-section:last-child {
+        .privacy-section:last-child {
             margin-bottom: 0;
         }
 
-        .terms-section h2 {
+        .privacy-section h2 {
             color: #ffffff;
             font-size: 1.8rem;
             margin-bottom: 20px;
@@ -126,24 +126,24 @@
             border-bottom: 2px solid #374151;
         }
 
-        .terms-section h3 {
+        .privacy-section h3 {
             color: #e5e7eb;
             font-size: 1.3rem;
             margin: 25px 0 15px 0;
         }
 
-        .terms-section p {
+        .privacy-section p {
             color: #d1d5db;
             margin-bottom: 15px;
             line-height: 1.7;
         }
 
-        .terms-section ul, .terms-section ol {
+        .privacy-section ul, .privacy-section ol {
             margin: 15px 0;
             padding-left: 30px;
         }
 
-        .terms-section li {
+        .privacy-section li {
             color: #d1d5db;
             margin-bottom: 10px;
             line-height: 1.6;
@@ -191,68 +191,31 @@
         }
 
         /* Table */
-        .terms-table {
+        .privacy-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
 
-        .terms-table th,
-        .terms-table td {
+        .privacy-table th,
+        .privacy-table td {
             padding: 12px;
             text-align: left;
             border: 1px solid #374151;
         }
 
-        .terms-table th {
+        .privacy-table th {
             background: #374151;
             font-weight: bold;
             color: #ffffff;
         }
 
-        .terms-table tr:nth-child(even) {
+        .privacy-table tr:nth-child(even) {
             background: #374151;
-        }
-
-        /* Acceptance Section */
-        .acceptance-section {
-            background: #1f1f1f;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .acceptance-section h3 {
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .acceptance-section p {
-            color: #d1d5db;
-            margin-bottom: 20px;
-        }
-
-        .accept-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .accept-button:hover {
-            background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
         }
 
         /* Footer */
-        .terms-footer {
+        .privacy-footer {
             text-align: center;
             padding: 30px;
             color: #9ca3af;
@@ -282,19 +245,19 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .terms-container {
+            .privacy-container {
                 padding: 10px;
             }
             
-            .terms-header {
+            .privacy-header {
                 padding: 30px 20px;
             }
             
-            .terms-header h1 {
+            .privacy-header h1 {
                 font-size: 2rem;
             }
             
-            .terms-content {
+            .privacy-content {
                 padding: 30px 20px;
             }
             
@@ -309,7 +272,7 @@
 
         /* Print Styles */
         @media print {
-            .terms-nav, .acceptance-section, .terms-footer {
+            .privacy-nav, .privacy-footer {
                 display: none;
             }
             
@@ -317,7 +280,7 @@
                 background: white;
             }
             
-            .terms-container {
+            .privacy-container {
                 max-width: none;
                 padding: 0;
             }
@@ -368,239 +331,255 @@
         </div>
     </nav>
 
-    <div class="terms-container">
+    <div class="privacy-container">
         <!-- Header -->
-        <header class="terms-header">
-            <h1>Termos de Uso</h1>
-            <p>Leia atentamente os termos e condições que regem o uso de nossa plataforma</p>
+        <header class="privacy-header">
+            <h1>Política de Privacidade</h1>
+            <p>Saiba como protegemos e utilizamos suas informações pessoais</p>
             <div class="last-updated">Última atualização: 15 de Janeiro de 2024</div>
         </header>
 
         <!-- Navigation -->
-        <nav class="terms-nav">
+        <nav class="privacy-nav">
             <h3>Navegação Rápida</h3>
             <div class="nav-links">
-                <a href="#aceitacao" class="nav-link">1. Aceitação</a>
-                <a href="#cadastro" class="nav-link">2. Cadastro</a>
-                <a href="#uso" class="nav-link">3. Uso da Plataforma</a>
-                <a href="#propriedade" class="nav-link">4. Propriedade</a>
-                <a href="#privacidade" class="nav-link">5. Privacidade</a>
-                <a href="#responsabilidades" class="nav-link">6. Responsabilidades</a>
-                <a href="#modificacoes" class="nav-link">7. Modificações</a>
-                <a href="#rescisao" class="nav-link">8. Rescisão</a>
-                <a href="#disposicoes" class="nav-link">9. Disposições</a>
+                <a href="#introducao" class="nav-link">1. Introdução</a>
+                <a href="#coleta" class="nav-link">2. Coleta de Dados</a>
+                <a href="#uso" class="nav-link">3. Uso dos Dados</a>
+                <a href="#compartilhamento" class="nav-link">4. Compartilhamento</a>
+                <a href="#seguranca" class="nav-link">5. Segurança</a>
+                <a href="#direitos" class="nav-link">6. Seus Direitos</a>
+                <a href="#cookies" class="nav-link">7. Cookies</a>
+                <a href="#alteracoes" class="nav-link">8. Alterações</a>
+                <a href="#contato" class="nav-link">9. Contato</a>
             </div>
         </nav>
 
         <!-- Content -->
-        <main class="terms-content">
-            <section id="aceitacao" class="terms-section">
-                <h2>1. Aceitação dos Termos</h2>
-                <p>Ao acessar e utilizar nossa plataforma, você concorda em ficar vinculado por estes Termos de Uso e por todas as leis e regulamentos aplicáveis. Se você não concordar com algum destes termos, está proibido de usar ou acessar este site.</p>
+        <main class="privacy-content">
+            <section id="introducao" class="privacy-section">
+                <h2>1. Introdução</h2>
+                <p>A Stars Models Agency valoriza sua privacidade e está comprometida em proteger suas informações pessoais. Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos suas informações quando você utiliza nossa plataforma.</p>
                 
                 <div class="highlight-box">
-                    <p><strong>Importante:</strong> Estes termos constituem um acordo legal entre você e nossa empresa. Recomendamos que leia cuidadosamente todo o documento.</p>
+                    <p><strong>Importante:</strong> Ao utilizar nossos serviços, você concorda com os termos desta Política de Privacidade. Recomendamos que leia este documento cuidadosamente.</p>
                 </div>
             </section>
 
-            <section id="cadastro" class="terms-section">
-                <h2>2. Cadastro e Conta do Usuário</h2>
+            <section id="coleta" class="privacy-section">
+                <h2>2. Coleta de Dados</h2>
                 
-                <h3>2.1 Elegibilidade</h3>
-                <p>Para utilizar nossos serviços, você deve:</p>
+                <h3>2.1 Informações que Coletamos</h3>
+                <p>Coletamos os seguintes tipos de informações:</p>
                 <ul>
-                    <li>Ter pelo menos 18 anos de idade</li>
-                    <li>Fornecer informações precisas e completas</li>
-                    <li>Manter a segurança de sua conta e senha</li>
-                    <li>Aceitar total responsabilidade por todas as atividades que ocorram em sua conta</li>
+                    <li><strong>Informações Pessoais:</strong> Nome, e-mail, telefone, data de nascimento</li>
+                    <li><strong>Informações Profissionais:</strong> Experiência, portfolio, medidas (para modelos)</li>
+                    <li><strong>Informações de Empresa:</strong> CNPJ, razão social (para clientes)</li>
+                    <li><strong>Informações Técnicas:</strong> IP, tipo de navegador, dispositivo</li>
+                    <li><strong>Dados de Uso:</strong> Páginas visitadas, tempo de sessão</li>
                 </ul>
 
-                <h3>2.2 Verificação</h3>
-                <p>Reservamo-nos o direito de:</p>
+                <h3>2.2 Como Coletamos</h3>
+                <p>Coletamos informações através de:</p>
                 <ul>
-                    <li>Solicitar documentos para verificação de identidade</li>
-                    <li>Recusar ou cancelar cadastros que não cumpram nossos requisitos</li>
-                    <li>Suspender contas com atividades suspeitas</li>
+                    <li>Formulários de cadastro e perfil</li>
+                    <li>Interações com nossa plataforma</li>
+                    <li>Comunicações por e-mail</li>
+                    <li>Cookies e tecnologias similares</li>
                 </ul>
 
                 <div class="warning-box">
-                    <p><strong>Atenção:</strong> Você é responsável por manter a confidencialidade de sua senha e por todas as atividades realizadas em sua conta.</p>
+                    <p><strong>Atenção:</strong> Coletamos apenas informações necessárias para fornecer nossos serviços e melhorar sua experiência.</p>
                 </div>
             </section>
 
-            <section id="uso" class="terms-section">
-                <h2>3. Uso da Plataforma</h2>
+            <section id="uso" class="privacy-section">
+                <h2>3. Uso dos Dados</h2>
                 
-                <h3>3.1 Conduta Permitida</h3>
-                <p>Você concorda em usar a plataforma apenas para fins legais e de acordo com estes termos. Condutas permitidas incluem:</p>
+                <h3>3.1 Finalidades do Uso</h3>
+                <p>Utilizamos suas informações para:</p>
                 <ul>
-                    <li>Acesso aos serviços conforme disponibilizado</li>
-                    <li>Uso pessoal ou empresarial legítimo</li>
-                    <li>Respeito aos direitos de outros usuários</li>
+                    <li>Fornecer e melhorar nossos serviços</li>
+                    <li>Processar cadastros e gerenciar contas</li>
+                    <li>Facilitar conexões entre modelos e clientes</li>
+                    <li>Enviar comunicações importantes</li>
+                    <li>Personalizar sua experiência</li>
+                    <li>Cumprir obrigações legais</li>
                 </ul>
 
-                <h3>3.2 Condutas Proibidas</h3>
-                <p>É expressamente proibido:</p>
+                <h3>3.2 Base Legal</h3>
+                <p>Nosso tratamento de dados é baseado em:</p>
                 <ul>
-                    <li>Violar qualquer lei ou regulamento aplicável</li>
-                    <li>Infringir direitos de propriedade intelectual</li>
-                    <li>Distribuir malware ou código malicioso</li>
-                    <li>Realizar atividades de hacking ou engenharia reversa</li>
-                    <li>Spam ou envio de comunicações não solicitadas</li>
-                    <li>Praticar assédio ou discriminação</li>
+                    <li><strong>Consentimento:</strong> Quando você nos fornece dados voluntariamente</li>
+                    <li><strong>Contrato:</strong> Para execução de serviços contratados</li>
+                    <li><strong>Legítimo Interesse:</strong> Para melhorar nossos serviços</li>
+                    <li><strong>Obrigação Legal:</strong> Para cumprir leis e regulamentos</li>
+                </ul>
+            </section>
+
+            <section id="compartilhamento" class="privacy-section">
+                <h2>4. Compartilhamento de Dados</h2>
+                
+                <h3>4.1 Quando Compartilhamos</h3>
+                <p>Podemos compartilhar suas informações com:</p>
+                <ul>
+                    <li><strong>Clientes/Agências:</strong> Perfil de modelos para oportunidades</li>
+                    <li><strong>Modelos:</strong> Informações de jobs e contratantes</li>
+                    <li><strong>Prestadores de Serviço:</strong> Hospedagem, análise de dados</li>
+                    <li><strong>Autoridades:</strong> Quando exigido por lei</li>
+                </ul>
+
+                <h3>4.2 Controle de Compartilhamento</h3>
+                <p>Você tem controle sobre:</p>
+                <ul>
+                    <li>Quais informações do perfil são públicas</li>
+                    <li>Comunicações de marketing</li>
+                    <li>Visibilidade para outros usuários</li>
                 </ul>
 
                 <div class="important-note">
-                    <p><strong>Nota:</strong> Reservamo-nos o direito de investigar e tomar ações legais contra qualquer violação destes termos.</p>
+                    <p><strong>Nota:</strong> Não vendemos suas informações pessoais para terceiros.</p>
                 </div>
             </section>
 
-            <section id="propriedade" class="terms-section">
-                <h2>4. Propriedade Intelectual</h2>
+            <section id="seguranca" class="privacy-section">
+                <h2>5. Segurança de Dados</h2>
                 
-                <h3>4.1 Direitos da Empresa</h3>
-                <p>Todos os direitos de propriedade intelectual relacionados à plataforma, incluindo但不限于:</p>
-                <ul>
-                    <li>Software e código fonte</li>
-                    <li>Marcas registradas e logotipos</li>
-                    <li>Design e interface do usuário</li>
-                    <li>Documentação e manuais</li>
-                </ul>
-
-                <h3>4.2 Conteúdo do Usuário</h3>
-                <p>Ao enviar conteúdo para nossa plataforma, você:</p>
-                <ul>
-                    <li>Garante que tem direito sobre o conteúdo</li>
-                    <li>Concede licença não-exclusiva para utilização</li>
-                    <li>Autoriza a exibição e distribuição conforme necessário</li>
-                </ul>
-            </section>
-
-            <section id="privacidade" class="terms-section">
-                <h2>5. Privacidade e Proteção de Dados</h2>
-                <p>Nosso compromisso com sua privacidade está detalhado em nossa <a href="politica-privacidade.php" class="contact-link">Política de Privacidade</a>, que faz parte integrante destes Termos de Uso.</p>
-                
-                <h3>5.1 Coleta de Dados</h3>
-                <p>Coletamos e utilizamos dados conforme necessário para:</p>
-                <ul>
-                    <li>Prestação dos serviços contratados</li>
-                    <li>Melhoria contínua da plataforma</li>
-                    <li>Cumprimento de obrigações legais</li>
-                </ul>
-
-                <h3>5.2 Segurança</h3>
-                <p>Implementamos medidas de segurança técnicas e organizacionais para proteger seus dados, incluindo:</p>
+                <h3>5.1 Medidas de Proteção</h3>
+                <p>Implementamos medidas de segurança robustas:</p>
                 <ul>
                     <li>Criptografia de dados sensíveis</li>
-                    <li>Controles de acesso rigorosos</li>
+                    <li>Controle de acesso baseado em função</li>
                     <li>Monitoramento contínuo de segurança</li>
+                    <li>Backups regulares</li>
+                    <li>Treinamento de equipe em proteção de dados</li>
+                </ul>
+
+                <h3>5.2 Retenção de Dados</h3>
+                <p>Mantemos suas informações apenas pelo tempo necessário:</p>
+                <ul>
+                    <li>Dados de conta: Enquanto a conta estiver ativa</li>
+                    <li>Dados de transação: 5 anos (exigência legal)</li>
+                    <li>Dados de uso: 2 anos para melhorias</li>
                 </ul>
             </section>
 
-            <section id="responsabilidades" class="terms-section">
-                <h2>6. Limitações de Responsabilidade</h2>
+            <section id="direitos" class="privacy-section">
+                <h2>6. Seus Direitos</h2>
                 
-                <h3>6.1 Isenções</h3>
-                <p>Não nos responsabilizamos por:</p>
+                <h3>6.1 Direitos do Titular</h3>
+                <p>De acordo com a LGPD, você tem direito a:</p>
                 <ul>
-                    <li>Danos indiretos, incidentais ou consequenciais</li>
-                    <li>Interrupções temporárias do serviço</li>
-                    <li>Ações de terceiros não controlados por nós</li>
-                    <li>Uso indevido da plataforma por usuários</li>
+                    <li><strong>Acesso:</strong> Saber quais dados temos sobre você</li>
+                    <li><strong>Correção:</strong> Retificar dados incompletos ou desatualizados</li>
+                    <li><strong>Exclusão:</strong> Solicitar a eliminação de dados</li>
+                    <li><strong>Portabilidade:</strong> Receber dados em formato estruturado</li>
+                    <li><strong>Revogação:</strong> Retirar consentimento a qualquer momento</li>
+                    <li><strong>Oposição:</strong> Opor-se a determinado tratamento</li>
                 </ul>
 
-                <h3>6.2 Garantias</h3>
-                <p>A plataforma é fornecida "no estado em que se encontra", sem garantias de qualquer tipo, expressas ou implícitas.</p>
+                <h3>6.2 Como Exercer Seus Direitos</h3>
+                <p>Para exercer seus direitos, entre em contato através do e-mail: <a href="mailto:privacidade@starsmodels.com" class="contact-link">privacidade@starsmodels.com</a></p>
 
-                <table class="terms-table">
+                <table class="privacy-table">
                     <thead>
                         <tr>
-                            <th>Situação</th>
-                            <th>Responsabilidade</th>
+                            <th>Direito</th>
+                            <th>Prazo de Resposta</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Manutenção programada</td>
-                            <td>Comunicação prévia de 48h</td>
+                            <td>Acesso e Confirmação</td>
+                            <td>15 dias</td>
                         </tr>
                         <tr>
-                            <td>Problemas técnicos</td>
-                            <td>Resolução em até 24h</td>
+                            <td>Correção e Exclusão</td>
+                            <td>15 dias</td>
                         </tr>
                         <tr>
-                            <td>Casos fortuitos</td>
-                            <td>Isenção de responsabilidade</td>
+                            <td>Portabilidade</td>
+                            <td>15 dias</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
-            <section id="modificacoes" class="terms-section">
-                <h2>7. Modificações dos Termos</h2>
-                <p>Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. As alterações entrarão em vigor:</p>
+            <section id="cookies" class="privacy-section">
+                <h2>7. Cookies e Tecnologias Similares</h2>
                 
+                <h3>7.1 O que São Cookies</h3>
+                <p>Cookies são pequenos arquivos armazenados no seu dispositivo que nos ajudam a:</p>
                 <ul>
-                    <li>Imediatamente para novos usuários</li>
-                    <li>30 dias após a notificação para usuários existentes</li>
+                    <li>Lembrar suas preferências</li>
+                    <li>Melhorar a segurança</li>
+                    <li>Analisar o uso da plataforma</li>
+                    <li>Personalizar conteúdo</li>
+                </ul>
+
+                <h3>7.2 Controle de Cookies</h3>
+                <p>Você pode controlar cookies através:</p>
+                <ul>
+                    <li>Configurações do navegador</li>
+                    <li>Ferramentas de opt-out</li>
+                    <li>Nossos avisos de consentimento</li>
                 </ul>
 
                 <div class="highlight-box">
-                    <p><strong>Notificação:</strong> Notificaremos sobre alterações significativas através de e-mail ou aviso na plataforma. O uso continuado após as modificações constitui aceitação dos novos termos.</p>
+                    <p><strong>Importante:</strong> A desativação de cookies pode afetar a funcionalidade de alguns recursos da plataforma.</p>
                 </div>
             </section>
 
-            <section id="rescisao" class="terms-section">
-                <h2>8. Rescisão</h2>
+            <section id="alteracoes" class="privacy-section">
+                <h2>8. Alterações na Política</h2>
+                <p>Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre alterações significativas através de:</p>
                 
-                <h3>8.1 Pelo Usuário</h3>
-                <p>Você pode encerrar sua conta a qualquer momento através das configurações da plataforma ou entrando em contato conosco.</p>
-
-                <h3>8.2 Pela Empresa</h3>
-                <p>Podemos suspender ou encerrar seu acesso imediatamente se:</p>
                 <ul>
-                    <li>Violar estes Termos de Uso</li>
-                    <li>Praticar atividades fraudulentas</li>
-                    <li>Colocar em risco a segurança da plataforma</li>
-                    <li>Deixar de pagar pelos serviços</li>
+                    <li>E-mail para usuários cadastrados</li>
+                    <li>Aviso em nossa plataforma</li>
+                    <li>Atualização da data de "Última atualização"</li>
                 </ul>
+
+                <div class="warning-box">
+                    <p><strong>Atenção:</strong> O uso continuado de nossos serviços após alterações constitui aceitação da nova política.</p>
+                </div>
             </section>
 
-            <section id="disposicoes" class="terms-section">
-                <h2>9. Disposições Finais</h2>
+            <section id="contato" class="privacy-section">
+                <h2>9. Contato e Dúvidas</h2>
                 
-                <h3>9.1 Lei Aplicável</h3>
-                <p>Estes Termos são regidos pelas leis da República Federativa do Brasil.</p>
+                <h3>9.1 Encarregado de Proteção de Dados</h3>
+                <p>Nosso Encarregado de Proteção de Dados (DPO) está disponível para:</p>
+                <ul>
+                    <li>Esclarecer dúvidas sobre privacidade</li>
+                    <li>Receber solicitações de direitos</li>
+                    <li>Tratar incidentes de segurança</li>
+                </ul>
 
-                <h3>9.2 Foro</h3>
-                <p>Fica eleito o foro da comarca de São Paulo/SP para dirimir quaisquer questões decorrentes destes termos.</p>
-
-                <h3>9.3 Divisibilidade</h3>
-                <p>Se qualquer disposição destes Termos for considerada inválida ou inexequível, as demais disposições permanecerão em pleno vigor e efeito.</p>
-
+                <h3>9.2 Como Nos Contactar</h3>
                 <div class="definition-list">
-                    <div class="definition-term">Plataforma</div>
-                    <div class="definition-description">Refere-se ao website, aplicativos móveis, APIs e todos os serviços relacionados fornecidos por nossa empresa.</div>
+                    <div class="definition-term">E-mail do DPO</div>
+                    <div class="definition-description"><a href="mailto:privacidade@starsmodels.com" class="contact-link">privacidade@starsmodels.com</a></div>
                     
-                    <div class="definition-term">Usuário</div>
-                    <div class="definition-description">Qualquer pessoa que acesse ou utilize nossa plataforma, cadastrada ou não.</div>
+                    <div class="definition-term">Telefone</div>
+                    <div class="definition-description">(61) 4184-4847</div>
                     
-                    <div class="definition-term">Conteúdo</div>
-                    <div class="definition-description">Qualquer informação, texto, imagem ou outro material disponibilizado através da plataforma.</div>
+                    <div class="definition-term">Endereço</div>
+                    <div class="definition-description">Asa Norte, Brasília - DF, Brasil</div>
+                    
+                    <div class="definition-term">Prazo de Resposta</div>
+                    <div class="definition-description">Até 15 dias úteis</div>
+                </div>
+
+                <div class="important-note">
+                    <p><strong>Nota:</strong> Para exercer seus direitos ou reportar preocupações com privacidade, entre em contato com nosso DPO.</p>
                 </div>
             </section>
         </main>
 
-        <!-- Acceptance -->
-        <section class="acceptance-section">
-            <h3>Você leu e compreendeu nossos Termos de Uso?</h3>
-            <p>Ao utilizar nossa plataforma, você confirma que leu, compreendeu e concorda com todos os termos e condições aqui estabelecidos.</p>
-            <button class="accept-button" onclick="acceptTerms()">Aceitar Termos de Uso</button>
-        </section>
-
         <!-- Footer -->
-        <footer class="terms-footer">
-            <p>Em caso de dúvidas sobre estes Termos de Uso, entre em contato conosco através do e-mail <a href="mailto:juridico@starsmodels.com" class="contact-link">juridico@starsmodels.com</a></p>
+        <footer class="privacy-footer">
+            <p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato conosco através do e-mail <a href="mailto:privacidade@starsmodels.com" class="contact-link">privacidade@starsmodels.com</a></p>
             <p>© 2024 Stars Models Agency. Todos os direitos reservados.</p>
         </footer>
     </div>
@@ -629,7 +608,7 @@
 
         // Update active nav link on scroll
         window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.terms-section');
+            const sections = document.querySelectorAll('.privacy-section');
             const navLinks = document.querySelectorAll('.nav-link');
             
             let currentSection = '';
@@ -650,30 +629,16 @@
             });
         });
 
-        // Accept Terms Function
-        function acceptTerms() {
-            // In a real implementation, this would save acceptance to database
-            const acceptanceDate = new Date().toLocaleDateString('pt-BR');
-            
-            // Show confirmation
-            alert(`Termos de Uso aceitos em ${acceptanceDate}\n\nObrigado por revisar e aceitar nossos termos. Você será redirecionado para a plataforma.`);
-            
-            // Redirect to main platform (simulated)
-            setTimeout(() => {
-                window.location.href = 'cadastro.php';
-            }, 2000);
-        }
-
         // Print functionality
-        function printTerms() {
+        function printPrivacy() {
             window.print();
         }
 
         // Add print button dynamically
         document.addEventListener('DOMContentLoaded', function() {
-            const header = document.querySelector('.terms-header');
+            const header = document.querySelector('.privacy-header');
             const printButton = document.createElement('button');
-            printButton.textContent = '📄 Imprimir Termos';
+            printButton.textContent = '📄 Imprimir Política';
             printButton.style.cssText = `
                 background: #6c757d;
                 color: white;
@@ -686,7 +651,7 @@
             `;
             printButton.onmouseover = function() { this.style.background = '#5a6268'; }
             printButton.onmouseout = function() { this.style.background = '#6c757d'; }
-            printButton.onclick = printTerms;
+            printButton.onclick = printPrivacy;
             
             header.appendChild(printButton);
         });

@@ -6,7 +6,7 @@ session_start();
 $usuario_logado = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : null;
 
 // Processar logout
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirmar_logout'])) {
+//if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirmar_logout'])) {
     // Registrar ação de logout
     $acao = $usuario_logado ? "Logout realizado por: " . $usuario_logado : "Logout realizado";
     error_log($acao);
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirmar_logout'])) 
     // Redirecionar para página de login com mensagem
     header("Location: login.php?message=logout_success");
     exit();
-}
+//}
 
 // Se tentou acessar sem estar logado
 if (!$usuario_logado) {

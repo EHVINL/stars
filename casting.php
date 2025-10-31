@@ -209,15 +209,15 @@ $tipos_profissao = [
                         </div>
                         <?php endif; ?>
                         
-                        <?php if($modelo['idade']): ?>
+                        <!-- <?php if($modelo['idade']): ?>
                         <div class="text-center">
                             <div class="text-sm text-purple-300 mb-1">Idade</div>
                             <div class="text-white font-semibold"><?php echo $modelo['idade']; ?> anos</div>
                         </div>
-                        <?php endif; ?>
+                        <?php endif; ?> -->
                     </div>
 
-                    <?php if($modelo['busto'] && $modelo['cintura'] && $modelo['quadril']): ?>
+                    <!-- <?php if($modelo['busto'] && $modelo['cintura'] && $modelo['quadril']): ?>
                     <div class="mb-4">
                         <div class="text-sm text-purple-300 mb-2 text-center">Medidas</div>
                         <div class="flex justify-center space-x-4 text-sm text-white">
@@ -226,7 +226,7 @@ $tipos_profissao = [
                             <span>Q: <?php echo $modelo['quadril']; ?>cm</span>
                         </div>
                     </div>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
 
                     <?php if($modelo['experiencia']): ?>
                     <div class="mb-4">

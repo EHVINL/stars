@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once 'includes/config.php';
+
 // Verifica se o usuário está logado
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -42,59 +43,76 @@ require_once 'includes/config.php';
 </head>
 <body class="bg-black text-white min-h-screen font-sans antialiased">
     <!-- Topbar como usuário LOGADO -->
-    <nav class="bg-black shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <!-- Logo com estrela -->
-                        <div class="flex items-center space-x-3">
-                            <div class="star-glow">
-                                <svg width="28" height="28" viewBox="0 0 24 24">
-                                    <defs>
-                                        <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stop-color="#8b5cf6" />
-                                            <stop offset="100%" stop-color="#ec4899" />
-                                        </linearGradient>
-                                        <filter id="glow">
-                                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                                            <feMerge>
-                                                <feMergeNode in="coloredBlur"/>
-                                                <feMergeNode in="SourceGraphic"/>
-                                            </feMerge>
-                                        </filter>
-                                    </defs>
-                                    <path fill="url(#starGradient)" filter="url(#glow)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <span class="text-2xl font-bold gradient-text">STARS MODELS</span>
+<!-- Topbar como usuário LOGADO -->
+<nav class="bg-black shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo com estrela -->
+                    <div class="flex items-center space-x-3">
+                        <div class="star-glow">
+                            <svg width="28" height="28" viewBox="0 0 24 24">
+                                <defs>
+                                    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#8b5cf6" />
+                                        <stop offset="100%" stop-color="#ec4899" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <path fill="url(#starGradient)" filter="url(#glow)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
                         </div>
-                    </div>
-                    <!-- Menu para usuário logado -->
-                    <div class="hidden md:ml-10 md:flex md:space-x-8">
-                        <a href="home.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
-                        <a href="sobrenos.php" class="border-purple-600 text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Sobre Nós</a>
-                        <a href="casting.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Casting</a>
-                        <a href="jobs.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Jobs</a>
-                        <a href="noticias.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Notícias</a>
-                        <a href="contato.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contato</a>
+                        <span class="text-2xl font-bold gradient-text">STARS MODELS</span>
                     </div>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <!-- Perfil do usuário logado -->
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
-                            U
-                        </div>
-                        <span class="text-purple-300 text-sm">Usuário</span>
-                    </div>
-                    <a href="logout.php" class="text-purple-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
-                        Sair
-                    </a>
+                <!-- Menu para usuário logado -->
+                <div class="hidden md:ml-10 md:flex md:space-x-8">
+                    <a href="home.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                    <a href="sobrenos.php" class="border-purple-600 text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Sobre Nós</a>
+                    <a href="casting.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Casting</a>
+                    <a href="jobs.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Jobs</a>
+                    <a href="noticias.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Notícias</a>
+                    <a href="contato.php" class="border-transparent text-purple-300 hover:border-purple-500 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contato</a>
                 </div>
             </div>
+            <div class="flex items-center space-x-4">
+                <!-- Perfil do usuário logado -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                        <?php 
+                        // Mostra a primeira letra do nome do usuário
+                        if(isset($_SESSION['user_name'])) {
+                            echo strtoupper(substr($_SESSION['user_name'], 0, 1));
+                        } else {
+                            echo 'U';
+                        }
+                        ?>
+                    </div>
+                    <span class="text-purple-300 text-sm">
+                        <?php 
+                        // Mostra o nome do usuário
+                        if(isset($_SESSION['user_name'])) {
+                            echo htmlspecialchars($_SESSION['user_name']);
+                        } else {
+                            echo 'Usuário';
+                        }
+                        ?>
+                    </span>
+                </div>
+                <a href="logout.php" class="text-purple-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                    Sair
+                </a>
+            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Conteúdo Principal -->
     <div class="max-w-7xl mx-auto px-4 py-12">

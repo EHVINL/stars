@@ -120,14 +120,14 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                     </div>
                     <?php endif; ?>
                     
-                    <?php if($modelo['idade']): ?>
+                    <!-- <?php if($modelo['idade']): ?>
                     <div class="text-center lg:text-left">
                         <div class="text-2xl font-bold text-white"><?php echo $modelo['idade']; ?></div>
                         <div class="text-purple-300 text-sm">Idade</div>
                     </div>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
                     
-                    <?php if($modelo['peso']): ?>
+                    <!-- <?php if($modelo['peso']): ?>
                     <div class="text-center lg:text-left">
                         <div class="text-2xl font-bold text-white"><?php echo $modelo['peso']; ?>kg</div>
                         <div class="text-purple-300 text-sm">Peso</div>
@@ -139,11 +139,11 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                         <div class="text-2xl font-bold text-white"><?php echo $modelo['calcado']; ?></div>
                         <div class="text-purple-300 text-sm">Calçado</div>
                     </div>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
                 </div>
                 
                 <!-- Medidas -->
-                <?php if($modelo['busto'] && $modelo['cintura'] && $modelo['quadril']): ?>
+                <!-- <?php if($modelo['busto'] && $modelo['cintura'] && $modelo['quadril']): ?>
                 <div class="mb-6">
                     <h3 class="text-lg font-semibold text-purple-300 mb-3">Medidas</h3>
                     <div class="flex justify-center lg:justify-start space-x-6 text-white">
@@ -161,7 +161,7 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                         </div>
                     </div>
                 </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
             </div>
         </div>
     </div>
@@ -186,16 +186,16 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                     </div>
                     <?php endif; ?>
                     
-                    <?php if($modelo['formacao']): ?>
+                    <!-- <?php if($modelo['formacao']): ?>
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold text-purple-300 mb-3">Formação</h3>
                         <p class="text-purple-200 leading-relaxed whitespace-pre-line">
                             <?php echo htmlspecialchars($modelo['formacao']); ?>
                         </p>
                     </div>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
                     
-                    <?php if($modelo['habilidades']): ?>
+                    <!-- <?php if($modelo['habilidades']): ?>
                     <div>
                         <h3 class="text-lg font-semibold text-purple-300 mb-3">Habilidades Especiais</h3>
                         <div class="flex flex-wrap gap-2">
@@ -214,7 +214,7 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                             ?>
                         </div>
                     </div>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
                 </div>
                 
                 <!-- Portfólio/Book (Placeholder) -->
@@ -279,8 +279,9 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                                 <div class="text-white font-medium"><?php echo date('m/Y', strtotime($modelo['usuario_criado'])); ?></div>
                             </div>
                         </div>
+                    
                         
-                        <?php if($modelo['cidade'] || $modelo['estado']): ?>
+                        <!-- <?php if($modelo['cidade'] || $modelo['estado']): ?>
                         <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-purple-600/30 rounded-lg flex items-center justify-center">
                                 <i data-feather="map-pin" class="w-5 h-5 text-purple-400"></i>
@@ -297,7 +298,7 @@ $cor_tipo = $cores_tipo[$modelo['tipo_profissao']] ?? 'bg-purple-500';
                                 </div>
                             </div>
                         </div>
-                        <?php endif; ?>
+                        <?php endif; ?> -->
                     </div>
                     
                     <?php if(isset($_SESSION['user_id']) && $_SESSION['user_type'] === 'cliente'): ?>

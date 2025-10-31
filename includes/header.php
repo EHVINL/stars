@@ -159,9 +159,6 @@ if (!isset($pdo)) {
                                 Painel Admin
                             </a>
                         <?php elseif($_SESSION['user_type'] === 'modelo'): ?>
-                            <a href="modelo.php" class="nav-link text-purple-300 font-medium text-sm transition duration-300 hover:text-white <?php echo basename($_SERVER['PHP_SELF']) == 'modelo.php' ? 'active text-white' : ''; ?>">
-                                Meu Perfil
-                            </a>
                         <?php endif; ?>
                         
                         <div class="flex items-center space-x-4 pl-4 border-l border-purple-800">
